@@ -1,0 +1,8 @@
+services:
+    tatiana5.separatebots.listener:
+        class: tatiana5\separatebots\event\listener
+        arguments:
+            - '@auth'
+            - '@user'
+        tags:
+            - { name: event.listener }
